@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(94, 248, 197);">
+
+  <center>
+    <!-- question-1 -->
+    <!--Write a JavaScript program to remove items from a drop-down list. -->
+
+<select name="" id="color-slct"> 
+
+<option value="red">red</option>
+<option value="green">green</option>
+<option value="black">black</option>
+<option value="blue">blue</option>
+</select>
+
+<button id="remove-btn" onclick="dlt()">remove</button>
+
+</center>
+
+
+
+
+<!-- js -->
+    <script>
+       
+       
+const box=document.getElementById('box')
+const btn=document.getElementById('remove-btn')
+const colorOptn=document.getElementById('color-slct')
+
+colorOptn.style.padding='10px'
+btn.style.padding='10px'
+btn.style.backgroundColor='#ed3a1a'
+btn.style.color='white'
+
+function dlt(){
+
+colorOptn.remove(colorOptn.selectedIndex)
+
+
+}
+    </script>
+    
+</body>
+</html>
